@@ -1,0 +1,13 @@
+weather.admin:
+  title: 'Weather Check'
+  description: 'Check Today Weather'
+  parent: main
+  menu_name: main
+  route_name: weather.content
+
+weather.settings:
+  title: 'Weather settings'
+  description: 'Webservice Settings for Weather API'
+  parent: system.admin_config_development
+  route_name: weather.config
+  weight: 100

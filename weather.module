@@ -1,0 +1,11 @@
+<?php
+
+function weather_theme($existing, $type, $theme, $path) {
+  return [
+    'weather' => [
+      'variables' => [
+        'weather_data' => [],
+      ],
+    ],
+  ];
+}

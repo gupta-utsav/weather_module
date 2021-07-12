@@ -1,0 +1,6 @@
+name: Weather
+description: Creates a page with weather info defined by city ID.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

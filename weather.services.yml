@@ -1,0 +1,4 @@
+services:
+  weather.weather_services:
+    class: \Drupal\weather\Services\WeatherService
+    arguments: ["@http_client", "@config.factory"]
