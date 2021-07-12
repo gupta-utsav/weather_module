@@ -1,0 +1,18 @@
+{% if weather_data.name %}
+
+<h2>Current weather in {{ weather_data.name }}</h2>
+
+<h3>{{ weather_data.weather[0].main }}</h3>
+
+<strong>Temperature:</strong> {{ weather_data.main.temp|round }}°C (min: {{ weather_data.main.temp_min|round }}°C | max: {{ weather_data.main.temp_max|round }}°C )<br>
+<strong>Pressure:</strong> {{ weather_data.main.pressure }}MB<br>
+<strong>Humidity:</strong> {{ weather_data.main.humidity }}%<br>
+<strong>Wind:</strong> {{ weather_data.wind.speed }}km/h ({{ weather_data.wind.deg }}°)<br>
+<strong>Sunrise:</strong> {{ weather_data.sys.sunrise | date('H:m') }}<br>
+<strong>Sunset:</strong> {{ weather_data.sys.sunset | date('H:m') }}<br>
+
+{% else %}
+
+    Please check your settings if the City ID and your API key is correct.
+
+{% endif %}
